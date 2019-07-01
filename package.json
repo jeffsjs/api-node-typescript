@@ -1,0 +1,29 @@
+{
+  "name": "meat-api",
+  "version": "1.0.0",
+  "description": "API de Restaurantes",
+  "main": "index.js",
+  "scripts": {
+    "mongo": "mongod",
+    "server": "nodemon dist/main.js",
+    "ts": "tsc -w",
+    "debug": "node --debug-brk --inspect dist/main.js",
+    "start": "npm-run-all -p mongo server ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^3.0.4",
+    "mongoose": "5.4.13",
+    "restify": "^6.3.4",
+    "restify-errors": "^6.1.1"
+  },
+  "devDependencies": {
+    "@types/bcrypt": "^3.0.0",
+    "@types/mongoose": "^5.3.17",
+    "@types/restify": "^5.0.6",
+    "@types/restify-errors": "^4.3.3",
+    "npm-run-all": "^4.1.5"
+  }
+}
